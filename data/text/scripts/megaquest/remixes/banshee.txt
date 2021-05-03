@@ -1,0 +1,20 @@
+character,replace_equipment,curse_equipment
+Warrior,Thornplate,Vile Growth
+Warrior,Backwards Pistol,Cursed Axe
+Warrior,Control Globe,Dreary Fog
+Warrior,Rubber Flippers,Grave Mistake
+Warrior,Domino Effect,Evil Laugh
+Warrior,Gasoline,Haunting Laugh
+Warrior,Spy Kunai,Spookknife
+Warrior,Pathfinder's Compass,Bottled Message
+Warrior,Afterburner,Exhaust Pipe
+Warrior,Nanobots,Spider Nest
+Warrior,Reflector Field,Corruptor Field
+Warrior,Sturdy Helmet,Pumpkin Helmet
+Warrior,Blessing Machine,Raw Ambition
+Warrior,Lightmare,Phasmophobia
+Warrior,Creoreflections,Selenophobia
+Warrior,Fortress Button,Jumpscare Button
+Warrior,Cell Division,Cursed Image
+Warrior,Hot Hand,Demon Incarnate
+Warrior,Thermoabsorber,Judgenudge

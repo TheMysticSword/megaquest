@@ -1,0 +1,3 @@
+Code and script files (*.hscript/*.hs) are licensed by CODE_LICENSE.TXT
+All other files are licensed by ASSET_LICENSE.TXT
+		

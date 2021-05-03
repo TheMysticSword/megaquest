@@ -1,0 +1,3 @@
+ID,Character,Overworld Sprite,Difficulty,Icon,Select Normal Sprite,Select Normal Sprite Offset,Select Endgame Sprite,Select Endgame Sprite Offset,Initial Description,Middle Description,Endgame Description,Post Endgame Description
+diceydungeons_warrior,Warrior,overworld_warrior,1,characters/warrior/charicon_warrior,cutscenes/warrior/warrior_idle.json,0|75,cutscenes/warrior/warrior_worried_idle.json,25|75,,[quote]Lady Luck invited us for a|few more episodes!||Good thing that I've been|training a lot since|the last time![quote],[quote]Did the monsters|start working out in|between episodes?||Or am I going|out of shape?[quote],
+diceydungeons_bear,Bear,overworld_bear,1,characters/bear/charicon_bear,,0|0,,0|0,???,???,???,???

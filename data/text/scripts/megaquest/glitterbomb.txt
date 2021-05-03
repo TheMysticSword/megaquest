@@ -1,0 +1,9 @@
+fire
+ice
+shock
+weaken
+poison
+lock
+curse
+mqencase
+mqjam

@@ -1,0 +1,89 @@
+// SETUP
+
+#include endepisodegraphics_ladyluck.txt
+
+// HELPER FUNCTIONS	
+
+function signanimate(sign) {
+	var s = sign.show("turn");
+	//s.onComplete(function() { resume(); sign.show("loop"); });
+	//pause();
+	while(!s.completed) {
+		// do nothing
+	}
+	sign.show("loop");
+}
+
+function spinthewheel(sign, wheel) {
+  var s = sign.show("turn");
+	//s.onComplete(function() { resume(); sign.show("loop"); });
+	//pause();
+	while(!s.completed) {
+		// do nothing
+	}
+	sign.hide();
+	
+  wheel.x = 30;
+  wheel.y = -30;
+  play("spinthewheel");
+	var s = wheel.show("spin1");
+	//s.onComplete(function() { resume(); sign.show("loop"); });
+	//pause();
+	while(!s.completed) {
+		// do nothing
+	}
+	wheel.hide();
+}
+
+// ACTORS
+actor("Lady Luck", screenwidthmid + 400, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+
+// INTRO
+
+play("music_cutscene_lesscheery");
+
+changebackground("intro_sign");
+
+sign.y = -screenheight;
+ladyluck_sign.y = -screenheight;
+sign.show("loop");
+ladyluck_sign.show("idle");
+
+Actuate.tween(sign, 2, { y: 0 }).ease(Expo.easeOut);
+Actuate.tween(ladyluck_sign, 2, { y: 0 }).ease(Expo.easeOut);
+
+wait(0.5);
+
+fadein();
+
+wait(1.5);
+
+ladyluck_sign.show("talking"); 
+actor("Lady Luck", screenwidthmid + 200, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+
+for(message in variables.messages_beforespin) {
+  var mood = "normal";
+	speak("Lady Luck", message.text);
+}
+
+if(variables.messages_afterspin.length > 0){
+  ladyluck_sign.show("idle");
+
+  ladyluck_sign.hide();
+
+  spinthewheel(sign, wheel);
+
+  signanimate(sign);
+
+  ladyluck_sign.show("talking");
+  actor("Lady Luck", screenwidthmid + 200, 100, Col.YELLOW, LEFT, TOP, "chat_ladyluck", "characters/misc/charicon_ladyluck");
+
+  for(message in variables.messages_afterspin) {
+    var mood = "normal";
+    speak("Lady Luck", message.text);
+  }
+
+  ladyluck_sign.show("idle");
+}
+
+gamecompletefromcutscene();

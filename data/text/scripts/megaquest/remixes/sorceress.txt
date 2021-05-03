@@ -1,0 +1,15 @@
+fire
+ice
+shock
+weaken
+poison
+lock
+curse
+vanish
+shield
+fury
+reequipnext
+dodge
+reduce
+mqencase
+mqjam

@@ -1,0 +1,664 @@
+{
+	"music_boss_kompuutah": {
+		"playsounds": [{
+			"channel": 1,
+			"delay": 0,
+			"effect": "",
+			"file": "music/combat/combat5",
+			"filter": "",
+			"loop": true,
+			"panning": {
+				"fade": 0,
+				"max": 0,
+				"min": 0,
+				"random": false,
+				"value": 0
+			},
+			"pitch": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			},
+			"position": 0,
+			"syncbpm": 0,
+			"tag": "combatmusic",
+			"volume": {
+				"fade": 2,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 0
+			}
+		}],
+		"stopsounds": [{
+			"file": "music/title/title"
+		}]
+	},
+	"music_boss_sudd_n._death": {
+		"playsounds": [{
+			"channel": 1,
+			"delay": 0,
+			"effect": "",
+			"file": "music/combat/combatboss",
+			"filter": "",
+			"loop": true,
+			"panning": {
+				"fade": 0,
+				"max": 0,
+				"min": 0,
+				"random": false,
+				"value": 0
+			},
+			"pitch": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			},
+			"position": 0,
+			"syncbpm": 0,
+			"tag": "combatmusic",
+			"volume": {
+				"fade": 2,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 0
+			}
+		}],
+		"stopsounds": [{
+			"file": "music/title/title"
+		}]
+	},
+	"helium_fly": {
+		"playsounds": [{
+			"channel": 0,
+			"delay": 0,
+			"effect": "",
+			"file": "sfx/player/abilities/jesterdiscard",
+			"filter": "",
+			"loop": false,
+			"panning": {
+				"fade": 0,
+				"max": 0,
+				"min": 0,
+				"random": false,
+				"value": 0
+			},
+			"pitch": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			},
+			"position": 0,
+			"syncbpm": 0,
+			"tag": "",
+			"volume": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			}
+		}]
+	},
+	"helium_pop": {
+		"playsounds": [{
+			"channel": 0,
+			"delay": 0,
+			"effect": "",
+			"file": "sfx/player/abilities/jestersnap",
+			"filter": "",
+			"loop": false,
+			"panning": {
+				"fade": 0,
+				"max": 0,
+				"min": 0,
+				"random": false,
+				"value": 0
+			},
+			"pitch": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			},
+			"position": 0,
+			"syncbpm": 0,
+			"tag": "",
+			"volume": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			}
+		}, {
+			"channel": 0,
+			"delay": 0,
+			"effect": "",
+			"file": "sfx/player/abilities/jesterdelete",
+			"filter": "",
+			"loop": false,
+			"panning": {
+				"fade": 0,
+				"max": 0,
+				"min": 0,
+				"random": false,
+				"value": 0
+			},
+			"pitch": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			},
+			"position": 0,
+			"syncbpm": 0,
+			"tag": "",
+			"volume": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			}
+		}]
+	},
+	"_chip": {
+		"playsounds": [{
+			"channel": 0,
+			"delay": 0,
+			"effect": "",
+			"filter": "",
+			"folder": "sfx/weapontype/chip",
+			"loop": false,
+			"panning": {
+				"fade": 0,
+				"max": 0,
+				"min": 0,
+				"random": false,
+				"value": 0
+			},
+			"pitch": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			},
+			"position": 0,
+			"sequential": true,
+			"syncbpm": 0,
+			"tag": "",
+			"volume": {
+				"fade": 0,
+				"max": 1,
+				"min": 0,
+				"random": false,
+				"value": 1
+			}
+		}]
+	},
+	"_andromeda": {
+		"playsounds": [{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/status/fire/fire",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.4
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/status/dodge/dodge",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 2
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"folder": "sfx/status/curse",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.4
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/damage/takedamage",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.4
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/player/abilities/jackpot/jackpotrolldice",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.3
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.5
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/weapontype/plasma/plasmablaster",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.3
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.8
+				}
+			}
+		]
+	},
+	"_strawberry": {
+		"playsounds": [{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/battle/defeatmonster",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1.4
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.7
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 0,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/status/cure/curestatus",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1.5
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1
+				}
+			},
+			{
+				"channel": 0,
+				"delay": 1,
+				"effect": "",
+				"filter": "",
+				"file": "sfx/battle/levelup",
+				"loop": false,
+				"panning": {
+					"fade": 0,
+					"max": 0,
+					"min": 0,
+					"random": false,
+					"value": 0
+				},
+				"pitch": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 1.4
+				},
+				"position": 0,
+				"syncbpm": 0,
+				"tag": "",
+				"volume": {
+					"fade": 0,
+					"max": 1,
+					"min": 0,
+					"random": false,
+					"value": 0.5
+				}
+			}
+		]
+	},
+	"_mqencase": {
+        "playsounds": [
+            {
+                "channel": 0,
+                "delay": 0,
+                "effect": "",
+                "filter": "",
+                "folder": "sfx/status/mqencase",
+                "loop": false,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                }
+            }
+        ]
+	},
+	"_mqencasebreak": {
+        "playsounds": [
+            {
+                "channel": 0,
+                "delay": 0,
+                "effect": "",
+                "filter": "",
+                "folder": "sfx/status/mqencase/break",
+                "loop": false,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                }
+            }
+        ]
+	},
+	"_mqjam": {
+        "playsounds": [
+            {
+                "channel": 0,
+                "delay": 0,
+                "effect": "",
+                "filter": "",
+                "folder": "sfx/status/mqjam",
+                "loop": false,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                }
+            }
+        ]
+	},
+	"mqloudbirdremix": {
+        "playsounds": [
+            {
+				"file": "voiceovers/loud_bird/action/loud_bird_action_01",
+				"tag": "1"
+			},
+			{
+				"file": "voiceovers/loud_bird/action/loud_bird_action_02",
+				"tag": "2"
+			},
+			{
+				"file": "voiceovers/loud_bird/action/loud_bird_action_03",
+				"tag": "3"
+			},
+			{
+				"file": "voiceovers/loud_bird/action/loud_bird_action_04",
+				"tag": "4"
+			},
+			{
+				"file": "voiceovers/loud_bird/action/loud_bird_action_05",
+				"tag": "5"
+			},
+			{
+				"file": "voiceovers/loud_bird/action/loud_bird_action_06",
+				"tag": "6"
+            }
+		]
+	},
+	"mqstickyhandsremix": {
+        "playsounds": [
+            {
+                "channel": 2,
+                "folder": "voiceovers/sticky_hands/personality",
+                "sequential": true,
+                "tag": ""
+            }
+        ]
+	},
+	"mqmimicremix": {
+        "playsounds": [
+			{
+                "channel": 2,
+                "folder": "voiceovers/mimic/personality",
+                "sequential": true,
+                "tag": "success"
+            },
+            {
+                "file": "sfx/status/dodge/applydodge",
+                "tag": "fail"
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+var dicemanipset = shuffle(["Bumpspade", "Judgenudge", "Stunula"]);
+var warriorshops = ["Shield Bash", "Toothy Shield", "Thornplate", pick(["Hellsteel Coating", "Moonstone Coating"]), "Backwards Pistol", "Heavy Rapier", "Flying Shield", "Control Globe", "Rubber Flippers", "Repeater", "Domino Effect", "Nautilus Shell", "Empyrean Blaster", "Gasoline", "Horn", "Dramatic Chainsaw", "Pillow Headset", "Shield Wash", "Staff of Allure", "Jelly Sprayer", "Energy Drink", "Electrocutor", "Confident Entrance"];
+var strangeshop = ["Time Skip", "Ballistic Quartz", "Crystallize", "Mining Drone", "Andromeda Launcher", "Strawberry", "Mystic Sword", "Fierce Fight", "Jester's Gesture", "Infinity Mirror Prism", "Sixth Sense", "Ultimate Spell", "Almost There"];
+var awesomelist = ["Cursed Axe", "Star Caster", "Eclipsed Blade", "Roller Blade", "Daybreak", "Sparklesword", "Goldweaver", "Freeze Ray", "Power Pack", "Sonic Railgun", "Thornstaff", "Hired Blade", "Trashcannon", "Glass Sword", "Siren Pole"];
+if (chance(10)) awesomelist.push("Bluff Sword");
+var floor2gooditem = [dicemanipset.pop()];
+dicemanipset = shuffle(dicemanipset.concat(["Paper Craft", "Building Blocks", "Signal Lamp", "Night Vision", "Lightmare", "Creoreflections", "Thermoabsorber", "Hologram Projector"]));
+var floor3item = [dicemanipset.pop(), "Spy Kunai", "Pathfinder's Compass", "Bunker Assembler", "Afterburner", "Blightning Rod", "Nanobots", "Disc Gun", "Reflector Field", "Reading the Room", "Dragon Chaser", "Hydroponics Bot", "Shoulder Cannon", "Moonglasses", "Ghost House", "Spring Boots", "Cleaver Throw"];
+if (chance(10)) floor3item.push("Misfortune Cookie@6");
+var floor5item = [dicemanipset.pop(), "Sturdy Helmet", "Ghastly Armor", "Blessing Machine", "Fortress Button", "Cell Division", "Hot Hand", "Dark Tides", "Aero Retry", "Tactical Scope", "Orange Gel", "Monologue", "Suspicious Trashcan", "Crayon Cannon"];
+if (chance(10)) floor5item.push("Infuriating Note");
+var vampireitem = ["Wooden Stake"];
+var myitempools = [warriorshops, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
+return myitempools;
