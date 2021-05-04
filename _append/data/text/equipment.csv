@@ -441,3 +441,8 @@ Day Night Cycle@night_downgraded,Change night to day,2,if (!simulation) {if (sel
 Sunstrike,Do [weaken]3[;] inflict [weaken]1 weaken|[gray](once per battle),2,attack(3[;] WEAKEN); sfxdamage(target[;] 3); inflict(WEAKEN);,Mumble,COUNTDOWN,5,ORANGE,change_power,change_power,,_weaken,0,NO,YES,,,,,,,,,,,,,
 Sunstrike_upgraded,Do [weaken]4[;] inflict [weaken]1 weaken|[gray](once per battle),2,attack(4[;] WEAKEN); sfxdamage(target[;] 4); inflict(WEAKEN);,Mumble,COUNTDOWN,5,ORANGE,,,,_weaken,0,NO,YES,,,,,,,,,,,,,
 Sunstrike_downgraded,Inflict [weaken]1 weaken|[gray](once per battle),2,inflict(WEAKEN);,Mumble,COUNTDOWN,5,ORANGE,,,,_weaken,0,NO,YES,,,,,,,,,,,,,
+Call from Beyond,Randomize enemy item|Blind [blind]4 dice,2,inflict(~mqinsanity~); inflict(BLIND[;] 4);,Stardust,DOUBLES|DOUBLES,,PURPLE,change_power,change_power,,_mqinsanity,0,NO,NO,excludefromrandomlists|cannotsteal,,,,,,,,,,,,
+Call from Beyond_upgraded,Randomize enemy item|Blind [blind]4 dice,2,inflict(~mqinsanity~); inflict(BLIND[;] 4);,Stardust,COUNTDOWN,10,PURPLE,,,,_mqinsanity,0,NO,NO,excludefromrandomlists|cannotsteal,,,,,,,,,,,,
+Call from Beyond_downgraded,Randomize enemy item|Blind [blind]4 dice,2,inflict(~mqinsanity~); inflict(BLIND[;] 4);,Stardust,REQUIRE6|REQUIRE6,,PURPLE,,,,_mqinsanity,0,NO,NO,excludefromrandomlists|cannotsteal,,,,,,,,,,,,
+Shipwrecker,Do [sword]<d6>[;] inflict [weaken]1 weaken|[gray](Reuseable),2,attack(d); sfxdamage(target[;] d); inflict(WEAKEN);,Plasma Gun,EVEN,,ORANGE,change_power,complicate,,_weaken,2,NO,NO,,,,,,,,,,,,,
+Shipwrecker_upgraded,Do [sword]<d6>[;] inflict [weaken]1 weaken|[gray](Reuseable),2,attack(d); sfxdamage(target[;] d); inflict(WEAKEN);,Plasma Gun,EVEN,,ORANGE,,,,_weaken,3,NO,NO,,,,,,,,,,,,,
