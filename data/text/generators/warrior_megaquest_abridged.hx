@@ -30,17 +30,25 @@ var floor3item = itempools[4];
 var floor5item = itempools[5];
 var vampireitem = itempools[6];
 
-var _level1enemies = shuffle(level1enemies.copy());
-var _level2enemies = shuffle(level2enemies.copy());
-var _level3enemies = shuffle(level3enemies.copy());
-var _level4enemies = shuffle(level4enemies.copy());
-var _level5enemies = shuffle(level5enemies.copy());
-var _super1enemies = shuffle(runscript("megaquest/getsuperenemies", [1]));
-var _super2enemies = shuffle(runscript("megaquest/getsuperenemies", [2]));
-var _super3enemies = shuffle(runscript("megaquest/getsuperenemies", [3]));
-var _super4enemies = shuffle(runscript("megaquest/getsuperenemies", [4]));
-var _super5enemies = shuffle(runscript("megaquest/getsuperenemies", [5]));
-var _bosses = shuffle(runscript("megaquest/getbosses"));
+function getrandomenemy(allenemies, getsuper) {
+  if (!getsuper) {
+    var enemy = allenemies.pop();
+    allenemies.remove(enemy);
+    return enemy;
+  } else {
+    var superenemies = [];
+    for (enemyname in allenemies) {
+        var fighter = new elements.Fighter(enemyname);
+        if (fighter.template.hassuper) {
+            superenemies.push(enemyname);
+        }
+        fighter.dispose();
+    }
+    var superenemy = superenemies.pop();
+    allenemies.remove(superenemy);
+    return "Super " + superenemy;
+  }
+}
 
 usestandardenemies(false);
 
@@ -63,7 +71,7 @@ goodotherstuff = [
 addfloor("small")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
-  .addenemies([_super1enemies.pop()], [_level3enemies.pop(), _level3enemies.pop()])
+  .addenemies([getrandomenemy(level1enemies, true)], [getrandomenemy(level3enemies, false), getrandomenemy(level3enemies, false)])
   .generate();
 
 //Floor 5:
@@ -80,7 +88,7 @@ goodotherstuff = [
 addfloor("big")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
-  .addenemies([_super3enemies.pop()], [_level5enemies.pop(), _level5enemies.pop(), _level5enemies.pop()])
+  .addenemies([getrandomenemy(level3enemies, true)], [getrandomenemy(level5enemies, false), getrandomenemy(level5enemies, false), getrandomenemy(level5enemies, false)])
   .generate();
 
 //Floor 6:
@@ -90,7 +98,7 @@ otherstuff = [];
 goodotherstuff = [];
 
 var lastfloor = addfloor("boss");
-var finalboss = _bosses.pop();
+var finalboss = getrandomenemy(level6enemies, false);
 
 if (finalboss == "Drake"){
   items.push(vampireitem.pop());
