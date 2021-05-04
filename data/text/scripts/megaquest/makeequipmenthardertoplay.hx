@@ -47,9 +47,9 @@ for (i in 0...amount) {
 	var originalremainingcountdown = eq.remainingcountdown;
 	eq.changeslots(newslots);
 	if (eq.countdown > 0) {
-		eq.countdown = originalcountdown * 2;
-		eq.maxcountdown = originalmaxcountdown * 2;
-		eq.remainingcountdown = originalremainingcountdown * 2;
+		eq.countdown = originalcountdown + 1;
+		eq.maxcountdown = originalmaxcountdown + 1;
+		eq.remainingcountdown = originalremainingcountdown + 1;
 	}
 }
 eq.animate("slotschanged");
