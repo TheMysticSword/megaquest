@@ -455,3 +455,8 @@ Ultrasound_upgraded,Shock [shock]3 equipment,1,inflict(SHOCK[;] 3);,Zap,DOUBLES|
 Ultrasound_downgraded,Shock [shock]1 equipment,1,inflict(SHOCK);,Zap,DOUBLES|DOUBLES,,YELLOW,,,,_shock,0,NO,NO,,,,,,,,,,,,,
 Vibrato,Inflict [vanish]Vanish,1,inflict(VANISH);,Lockdown,DOUBLES|DOUBLES,,PINK,simplify,complicate,,_vanish,0,NO,NO,,,,,,,,,,,,,
 Phaser,Dodge next attack,1,inflictself(DODGE);,Quick Thinking,DOUBLES|DOUBLES,,YELLOW,simplify,complicate,,_dodge,0,YES,NO,,,,,,,,,,,,,
+Lights Out,Lock [lock]2 dice|Roll 2 new dice,2,inflict(LOCK[;] 2); if (simulation) inflictself(~mqbackstab~); givedice([rand([1[;] 2[;] 3[;] 4[;] 5[;] 6])[;] rand([1[;] 2[;] 3[;] 4[;] 5[;] 6])]);,Lockdown,REQUIRE1|REQUIRE1,,PINK,increaserange,doublerequirements,,_lock,0,NO,NO,,,,,,,,,,,,,
+Backstab@mq,Do [sword]<equipmentuse> damage. Add [sword]1|on each item use.,1,var dmg = !simulation ? self.equipmentused - 1 : getstatusself(~mqbackstab~); attack(dmg); sfxdamage(target[;] dmg);,Time Stop,REQUIRE3,,GRAY,simplify,doublerequirements,,_metals,0,NO,NO,excludefromrandomlists,,,,,,inflictself(~mqbackstab~);,,,,,,
+Cloak@mq,Gain [reduce]1 reduce|[gray](Reuseable),1,inflictself(REDUCE| 1); if (simulation) inflictself(~mqbackstab~);,Protection,COUNTDOWN,4,ORANGE,change_power,change_power,,_shield,3,YES,NO,,1,,,,,,,,,,,
+Cloak@mq_upgraded,Gain [reduce]1 reduce|[gray](Reuseable),1,inflictself(REDUCE| 1); if (simulation) inflictself(~mqbackstab~);,Protection,COUNTDOWN,4,ORANGE,,,,_shield,-1,YES,NO,,,,,,,,,,,,,
+Cloak@mq_downgraded,Gain [reduce]1 reduce,1,inflictself(REDUCE| 1); if (simulation) inflictself(~mqbackstab~);,Protection,COUNTDOWN,4,ORANGE,,,,_shield,0,YES,NO,,,,,,,,,,,,,
