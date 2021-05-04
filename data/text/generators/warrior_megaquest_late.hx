@@ -109,18 +109,42 @@ addfloor("big")
   .generate();
 
 //Floor 6:
+usestandardenemies(false);
 items = [];
 gooditems = [];
 otherstuff = [];
 goodotherstuff = [];
 
 var lastfloor = addfloor("boss");
+var finalboss = "";
+var superfinalboss = false;
 
-if (getfinalboss() == "Drake"){
+// Add a super level 5 enemy instead of a regular boss!
+var superenemies = [];
+for (enemyname in level5enemies) {
+  var fighter = new elements.Fighter(enemyname);
+  if (fighter.template.hassuper) {
+    superenemies.push(enemyname);
+  }
+  fighter.dispose();
+}
+if (superenemies.length > 0) {
+  finalboss = rand(superenemies);
+  level5enemies.remove(finalboss);
+  superfinalboss = true;
+} else {
+  trace("Error: no super level 5 enemies found. Falling back to regular boss spawn");
+  finalboss = level6enemies.pop();
+}
+
+if (finalboss == "Drake"){
   items.push(vampireitem.pop());
 }
 
+if (superfinalboss) finalboss = "Super " + finalboss;
+
 lastfloor
+  .addenemies([], [finalboss])
   .additems(items, gooditems)
   .setlocation('BOSS')
   .addotherstuff(otherstuff, goodotherstuff)
