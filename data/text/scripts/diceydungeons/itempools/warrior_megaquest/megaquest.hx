@@ -7,7 +7,7 @@ var floor2gooditem = [dicemanipset.pop()];
 dicemanipset = shuffle(dicemanipset.concat(["Paper Craft", "Building Blocks", "Signal Lamp", "Night Vision", "Lightmare", "Creoreflections", "Thermoabsorber", "Hologram Projector"]));
 var floor3item = [dicemanipset.pop(), "Spy Kunai", "Pathfinder's Compass", "Bunker Assembler", "Afterburner", "Blightning Rod", "Nanobots", "Disc Gun", "Reflector Field", "Reading the Room", "Dragon Chaser", "Hydroponics Bot", "Shoulder Cannon", "Moonglasses", "Ghost House", "Spring Boots", "Cleaver Throw"];
 if (chance(10)) floor3item.push("Misfortune Cookie@6");
-var floor5item = [dicemanipset.pop(), "Sturdy Helmet", "Ghastly Armor", "Blessing Machine", "Fortress Button", "Cell Division", "Hot Hand", "Dark Tides", "Aero Retry", "Tactical Scope", "Orange Gel", "Monologue", "Suspicious Trashcan", "Crayon Cannon"];
+var floor5item = [dicemanipset.pop(), "Sturdy Helmet", "Ghastly Armor", "Blessing Machine", "Fortress Button", "Cell Division", "Hot Hand", "Dark Tides", "Aero Retry", "Tactical Scope", "Orange Gel", "Monologue", "Overdone Joke", "Crayon Cannon"];
 if (chance(10)) floor5item.push("Infuriating Note");
 var vampireitem = ["Wooden Stake"];
 var myitempools = [warriorshops, strangeshop, awesomelist, floor2gooditem, floor3item, floor5item, vampireitem];
