@@ -82,7 +82,8 @@ gooditems = [];
 otherstuff = [health(), health()];
 goodotherstuff = [
   upgrade(),
-  shop(["upgrade", warriorshops.pop(), warriorshops.pop()], [4, 4, 4])
+  shop(["upgrade", warriorshops.pop(), warriorshops.pop()], [4, 4, 4]),
+  trade(["any"], [awesomelist.pop()])
 ];
 
 addfloor("big")
