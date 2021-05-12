@@ -1,14 +1,16 @@
 // Activates a piece of equipment for free.
 // Argument 1 - The equipment that needs to be activated.
-// Argument 2 - Set to true if the Snap! animation should be played.
-// Argument 3 - Self fighter.
-// Argument 4 - Target fighter.
+// Argument 2 - Self fighter.
+// Argument 3 - Target fighter.
+// Argument 4 - Set to true if the Snap! animation should be played.
+// Argument 5 - Set to true if countdown slots should count down instantly to 0.
 var e = args[0];
+var instant_countdowns = args.length >= 5 && args[4] != null ? args[4] : true;
 e.shockedsetting = 0;
 e.positionshockslots();
-var slotsFilled = false;
+var wait_for_countdown = false;
 if (e.countdown > 0 && e.slots.indexOf("COUNTDOWN") == 0) {
-    e.remainingcountdown = 0;
+    e.remainingcountdown = instant_countdowns ? 0 : 6;
     e.reducecountdownby = 0;
 }
 var newdice = [];
@@ -46,6 +48,10 @@ if (e.slots.length > 0) for (slot in e.slots) {
             case "MAX1": d = 1;
             case "REQUIRE1": d = 1;
         }
+        if (slot == "COUNTDOWN" && !instant_countdowns) {
+            d = 6;
+            wait_for_countdown = true;
+        }
         d = runscript("megaquest/math/min", [d, total]);
         total -= d;
         newdice.push(d);
@@ -56,7 +62,6 @@ if (e.slots.length > 0) for (slot in e.slots) {
 }
 c = 0;
 if (newdice.length > 0) {
-    slotsFilled = true;
     for (d in newdice) {
         if (d != 0 && d != null) {
             var mydice = new elements.Dice();
@@ -68,6 +73,6 @@ if (newdice.length > 0) {
         c++;
     }
 }
-if (slotsFilled) e.doequipmentaction(args[1], args[2], (args[1].isplayer ? 1 : -1), e.assigneddice);
-e.animate("flashandshake");
+if (!wait_for_countdown) e.doequipmentaction(args[1], args[2], (args[1].isplayer ? 1 : -1), e.assigneddice);
 if (args.length >= 4 && args[3] != null && args[3]) e.animate("snap");
+else e.animate("flashandshake");
