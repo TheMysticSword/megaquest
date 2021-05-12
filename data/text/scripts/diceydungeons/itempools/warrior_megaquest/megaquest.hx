@@ -1,7 +1,7 @@
 var dicemanipset = shuffle(["Bumpspade", "Judgenudge", "Stunula"]);
-var warriorshops = ["Shield Bash", "Toothy Shield", "Thornplate", pick(["Hellsteel Coating", "Moonstone Coating"]), "Backwards Pistol", "Heavy Rapier", "Flying Shield", "Control Globe", "Rubber Flippers", "Repeater", "Domino Effect", "Nautilus Shell", "Empyrean Blaster", "Gasoline", "Horn", "Dramatic Chainsaw", "Pillow Headset", "Shield Wash", "Staff of Allure", "Jelly Sprayer", "Energy Drink", "Electrocutor", "Confident Entrance"];
+var warriorshops = ["Shield Bash", "Toothy Shield", "Thornplate", pick(["Hellsteel Coating", "Moonstone Coating"]), "Backwards Pistol", "Heavy Rapier", "Flying Shield", "Control Globe", "Rubber Flippers", "Repeater", "Domino Effect", "Nautilus Shell", "Empyrean Blaster", "Gasoline", "Horn", "Dramatic Chainsaw", "Pillow Headset", "Shield Wash", "Staff of Allure", "Jelly Sprayer", "Energy Drink", "Electrocutor", "Confident Entrance", "Glass Sword"];
 var strangeshop = ["Time Skip", "Ballistic Quartz", "Mining Drone", "Andromeda Launcher", "Strawberry", "Mystic Sword", "Fierce Fight", "Jester's Gesture", "Infinity Mirror Prism", "Sixth Sense", "Ultimate Spell", "Almost There"];
-var awesomelist = ["Cursed Axe", "Star Caster", "Eclipsed Blade", "Roller Blade", "Daybreak", "Sparklesword", "Goldweaver", "Freeze Ray", "Power Pack", "Sonic Railgun", "Thornstaff", "Hired Blade", "Trashcannon", "Glass Sword", "Siren Pole"];
+var awesomelist = ["Cursed Axe", "Star Caster", "Eclipsed Blade", "Roller Blade", "Daybreak", "Sparklesword", "Goldweaver", "Freeze Ray", "Power Pack", "Sonic Railgun", "Thornstaff", "Hired Blade", "Trashcannon", "Siren Pole"];
 if (chance(10)) awesomelist.push("Bluff Sword");
 var floor2gooditem = [dicemanipset.pop()];
 dicemanipset = shuffle(dicemanipset.concat(["Paper Craft", "Building Blocks", "Signal Lamp", "Night Vision", "Lightmare", "Creoreflections", "Thermoabsorber", "Hologram Projector"]));
