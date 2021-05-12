@@ -1,6 +1,6 @@
 var warriorshops = ["Toothy Shield", "Heavy Rapier", "Gasoline", "Nudgeblade", "Dice Cannon", "Blood Suck", "Cactus Shield", "Ballistic Quartz", "Infinity Mirror Prism", "Blender", "Hi Vis Jacket", "High Note"];
 var strangeshop = ["Crystallize", "Mystic Sword", "Jester's Gesture", "Nightmare", "Andromeda Launcher", "Sixth Sense"];
-var awesomelist = ["Cursed Axe", "Star Caster", "Eclipsed Blade", "Roller Blade", "Daybreak", "Sparklesword", "Goldweaver's Weapon", "Freeze Ray", "Power Pack", "Sonic Railgun", "Thornstaff", "Hired Blade", "Trashcannon"];
+var awesomelist = ["Cursed Axe", "Star Caster", "Eclipsed Blade", "Roller Blade", "Daybreak", "Sparklesword", "Goldweaver", "Freeze Ray", "Power Pack", "Sonic Railgun", "Thornstaff", "Hired Blade", "Trashcannon"];
 var floor2gooditem = ["Stellate"];
 var floor3item = ["Afterburner", "Shriek", "Polyhedron", "Star Map", "Dragon Chaser", "Lightning Rod"];
 var floor5item = ["Sturdy Helmet", "Campfire", "Gigabots", "Disc Room", "Throwing Javelin", "Sad Verse", "Glue", "Tactical Scope"];
