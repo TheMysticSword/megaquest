@@ -59,7 +59,7 @@ var goodotherstuff = [];
 
 //Floor 2:
 items = [];
-gooditems = [floor2gooditem.pop(), awesomelist.pop()];
+gooditems = [floor2gooditem.pop()];
 otherstuff = [health()];
 goodotherstuff = [
   shop(
@@ -110,3 +110,8 @@ lastfloor
   .addotherstuff(otherstuff, goodotherstuff)
   .addenemies([], [finalboss])
   .generate();
+
+var lvluprewards = "";
+for (x in awesomelist) lvluprewards += "Equipment:" + x + ",";
+lvluprewards = lvluprewards.substr(0, lvluprewards.length - 1);
+Rules.substitute("mqabridged_leveluprewards", lvluprewards);
